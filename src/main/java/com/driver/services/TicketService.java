@@ -82,7 +82,7 @@ public class TicketService {
             }
         }
         if(!startStation || !endStation){
-            throw new Exception("Invalid stations");
+            throw new Exception("Invalid BookingPersonId");
         }
 
         // Get all the Passengers
