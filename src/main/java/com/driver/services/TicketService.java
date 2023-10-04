@@ -53,7 +53,7 @@ public class TicketService {
         // Get the BookingPerson
         Optional<Passenger> optionalBookingPerson = passengerRepository.findById(bookTicketEntryDto.getBookingPersonId());
         if(!optionalBookingPerson.isPresent()){
-            throw new Exception("Invalid BookingPersonId");
+            throw new Exception("Invalid stations");
         }
         Passenger bookingPerson = optionalBookingPerson.get();
 
